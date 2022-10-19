@@ -50,6 +50,15 @@ p {
   margin-bottom: 25px;
 }
 
+.nav-1-item,
+.nav-2-item {
+  margin-right: 50px;
+}
+
+.nav-1-item:last-child,
+.nav-2-item:last-child {
+  margin-right: 0;
+}
 .header-logo {
   color: var(--black);
   margin-right: 93px;
