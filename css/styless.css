@@ -202,6 +202,8 @@ header .nav-contact {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .visually-hidden {
@@ -241,10 +243,24 @@ header .nav-contact {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+
+  margin: 0 auto 50px auto;
+  width: 366px;
 }
 
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  margin: 0 auto 50px auto;
+  width: 264px;
+}
 .section-team {
   background-color: var(--team-bc);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .third-title {
@@ -257,6 +273,22 @@ header .nav-contact {
   font-size: 16px;
   line-height: 19px;
   color: var(--descr-text);
+}
+
+.section-work {
+  padding-bottom: 94px;
+}
+img {
+  display: block;
+}
+
+.img-work:not(:last-child),
+.img-team:not(:last-child) {
+  margin-right: 30px;
+}
+
+.portfolio {
+  flex-wrap: wrap;
 }
 
 /* footer */
