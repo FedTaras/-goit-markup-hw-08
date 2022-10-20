@@ -165,10 +165,10 @@ header .nav-contact {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
-
-  margin: 0;
   text-align: center;
-  margin-bottom: 30px;
+
+  margin: 0 auto 30px auto;
+  width: 696px;
 }
 
 .main-button {
@@ -222,6 +222,19 @@ header .nav-contact {
   color: var(--descr-text);
 }
 
+.section-advantage {
+  padding-top: 109px;
+  padding-bottom: 94px;
+}
+
+.list-item {
+  width: 270px;
+
+  margin-right: 30px;
+}
+.list-item:last-child {
+  margin-right: 0;
+}
 /* section work + team + portfolio*/
 
 .second-title {
