@@ -375,6 +375,7 @@ img {
 
 .footer-list {
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 .footer {
