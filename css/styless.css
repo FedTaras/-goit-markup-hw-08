@@ -337,7 +337,8 @@ header .nav-contact {
 /* section work + team + portfolio*/
 
 .second-title,
-.team-title {
+.team-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -428,11 +429,8 @@ header .nav-contact {
   cursor: pointer;
 }
 
-/* .team-socials-link {
-  padding: 12px;
-} */
 .team-socials:hover .team-socials-icon,
-.team-socials-icon:focus,
+.team-socials:focus .team-socials-icon,
 .team-socials-icon:hover,
 .team-socials-icon:focus {
   fill: #ffffff;
@@ -477,6 +475,42 @@ header .nav-contact {
 .main-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients-item {
+  display: block;
+  width: 172px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item-icon {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+}
+
+.clients-item-link {
+  padding: 16px 32px;
+  display: block;
+}
+
+.clients-item:hover .clients-item-icon,
+.clients-item:focus .clients-item-icon,
+.clients-item-icon:hover,
+.clients-item-icon:focus {
+  fill: #ffffff;
 }
 
 /* footer */
