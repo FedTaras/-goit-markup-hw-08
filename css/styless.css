@@ -88,6 +88,12 @@ section {
   margin-right: 50px;
 }
 
+.head-list-cont-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .head-list-item:last-child,
 .head-list-cont-item:last-child {
   margin-right: 0;
@@ -202,7 +208,7 @@ header .nav-contact {
 }
 
 .section-title {
-  background-color: rgba(47, 48, 58, 1);
+  background-color: rgba(47, 48, 58, 0.4);
   background-image: url('/images/team-bg.jpg');
   background-color: var(--footer-bg);
   background-repeat: no-repeat;
@@ -216,31 +222,31 @@ header .nav-contact {
 .head-envelope {
   display: flex;
   align-items: center;
-  width: 16px;
-  height: 12px;
-  background-color: teal;
+  margin-right: 10px;
 }
 
-.head-envelope-icon {
+.head-envelope-icon,
+.head-smartphone-icon {
+  fill: var(--descr-text);
   object-fit: contain;
   background-repeat: no-repeat;
-  width: 16px;
-  height: 12px;
 }
-/* .head-envelope {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-color: tomato;
-  padding-top: 32px;
-  justify-content: center;
-}
-
 .head-envelope-icon {
   width: 16px;
   height: 12px;
-} */
+}
+.head-smartphone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.head-list-cont-item:hover .head-smartphone-icon,
+.head-list-cont-item:focus .head-smartphone-icon,
+.head-list-cont-item:hover .head-envelope-icon,
+.head-list-cont-item:focus .head-envelope-icon {
+  fill: var(--web-hover-color);
+}
+
 /* section title */
 .main-title {
   font-weight: 900;
@@ -545,4 +551,55 @@ header .nav-contact {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-address {
+  margin-right: 70px;
+}
+.join-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.join-item {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-item:hover,
+.join-item:focus {
+  background-color: var(--web-hover-color);
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-item-link {
+  padding: 12px;
+  display: block;
+}
+
+.join-item-icon {
+  width: 20px;
+  height: 20px;
 }
