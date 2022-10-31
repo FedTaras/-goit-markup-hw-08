@@ -201,7 +201,14 @@ header .nav-contact {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.section-title,
+.section-title {
+  background-color: rgba(47, 48, 58, 1);
+  background-image: url('/images/team-bg.jpg');
+  background-color: var(--footer-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .footer {
   background-color: var(--footer-bg);
 }
@@ -296,6 +303,23 @@ header .nav-contact {
   overflow: hidden;
 }
 
+.advantage-logo {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advantage-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .advantage-descr {
   line-height: 1.71;
   color: var(--descr-text);
@@ -361,6 +385,8 @@ header .nav-contact {
 }
 .text {
   text-align: center;
+
+  margin-bottom: 16px;
 }
 .section-work {
   padding-top: 0;
@@ -382,6 +408,39 @@ header .nav-contact {
 .img-team-title {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-list-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-socials-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.team-socials {
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* .team-socials-link {
+  padding: 12px;
+} */
+.team-socials:hover .team-socials-icon,
+.team-socials-icon:focus,
+.team-socials-icon:hover,
+.team-socials-icon:focus {
+  fill: #ffffff;
+}
+
+.team-socials:hover,
+.team-socials:focus {
+  background-color: #2196f3;
 }
 
 .img-title {
