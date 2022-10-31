@@ -195,6 +195,10 @@ header .nav-contact {
 .filter-button:focus {
   background-color: var(--web-hover-color);
   color: var(--white);
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .section-title,
@@ -202,6 +206,34 @@ header .nav-contact {
   background-color: var(--footer-bg);
 }
 
+.head-envelope {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  background-color: teal;
+}
+
+.head-envelope-icon {
+  object-fit: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 12px;
+}
+/* .head-envelope {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-color: tomato;
+  padding-top: 32px;
+  justify-content: center;
+}
+
+.head-envelope-icon {
+  width: 16px;
+  height: 12px;
+} */
 /* section title */
 .main-title {
   font-weight: 900;
@@ -365,6 +397,14 @@ header .nav-contact {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
+
+  border-radius: 4px;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .portfolio-item:nth-child(3n) {
