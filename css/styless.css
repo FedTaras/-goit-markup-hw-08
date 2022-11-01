@@ -10,6 +10,7 @@
   --fotter-cont: rgba(255, 255, 255, 0.6);
   --nav-border: rgb(236, 236, 236);
   --bg-button: #188ce8;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -208,9 +209,13 @@ header .nav-contact {
 }
 
 .section-title {
-  background-color: rgba(47, 48, 58, 0.4);
-  background-image: url('/images/team-bg.jpg');
-  background-color: var(--footer-bg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), var(--footer-bg)),
+    url(../images/team-bg.jpg);
+  min-width: 1600px;
+  height: 600px;
+
+  margin: 0 auto;
+
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -219,17 +224,10 @@ header .nav-contact {
   background-color: var(--footer-bg);
 }
 
-.head-envelope {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
 .head-envelope-icon,
 .head-smartphone-icon {
-  fill: var(--descr-text);
-  object-fit: contain;
-  background-repeat: no-repeat;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .head-envelope-icon {
   width: 16px;
@@ -420,11 +418,15 @@ header .nav-contact {
 .team-list-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 10px;
 }
 
 .team-socials-icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
 }
@@ -485,16 +487,16 @@ header .nav-contact {
 
 .clients-item {
   display: block;
-  width: 172px;
-  height: 90px;
+  width: 170px;
+  height: 92px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
 .clients-item:hover,
 .clients-item:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--web-hover-color);
 }
 
 .clients-item:not(:last-child) {
@@ -502,7 +504,7 @@ header .nav-contact {
 }
 
 .clients-item-icon {
-  fill: #afb1b8;
+  fill: var(--icon-color);
   width: 106px;
   height: 60px;
 }
@@ -516,7 +518,7 @@ header .nav-contact {
 .clients-item:focus .clients-item-icon,
 .clients-item-icon:hover,
 .clients-item-icon:focus {
-  fill: #ffffff;
+  fill: var(--web-hover-color);
 }
 
 /* footer */
@@ -534,6 +536,8 @@ header .nav-contact {
 }
 .nav-contact {
   color: var(--white);
+
+  display: flex;
 }
 
 .address-footer > .nav-contact {
