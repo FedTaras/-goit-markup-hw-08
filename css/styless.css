@@ -212,7 +212,7 @@ header .nav-contact {
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/team-bg.jpg);
   background-color: var(--footer-bg);
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
 
   margin: 0 auto;
@@ -422,32 +422,34 @@ header .nav-contact {
   gap: 10px;
 }
 
-.team-socials-icon {
-  fill: var(--icon-color);
-
+.team-socials-link {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.team-socials-icon {
+  fill: currentColor;
+
   width: 20px;
   height: 20px;
 }
 
 .team-socials {
-  padding: 12px;
   border-radius: 50%;
-  cursor: pointer;
 }
 
-.team-socials:hover .team-socials-icon,
-.team-socials:focus .team-socials-icon,
-.team-socials-icon:hover,
-.team-socials-icon:focus {
-  fill: #ffffff;
-}
-
-.team-socials:hover,
-.team-socials:focus {
-  background-color: #2196f3;
+.team-socials-link:hover .team-socials-icon,
+.team-socials-link:focus .team-socials-icon,
+.team-socials-link:hover,
+.team-socials-link:focus {
+  fill: var(--white);
+  background-color: var(--web-hover-color);
 }
 
 .img-title {
@@ -505,20 +507,25 @@ header .nav-contact {
 }
 
 .clients-item-icon {
-  fill: var(--icon-color);
+  fill: currentColor;
   width: 106px;
   height: 60px;
 }
 
 .clients-item-link {
-  padding: 16px 32px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+
+  /* padding: 16px 32px;
+  display: block; */
 }
 
 .clients-item:hover .clients-item-icon,
 .clients-item:focus .clients-item-icon,
-.clients-item-icon:hover,
-.clients-item-icon:focus {
+.clients-item-link:hover,
+.clients-item-link:focus {
   fill: var(--web-hover-color);
 }
 
