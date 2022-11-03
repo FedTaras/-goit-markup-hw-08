@@ -11,6 +11,7 @@
   --nav-border: rgb(236, 236, 236);
   --bg-button: #188ce8;
   --icon-color: #afb1b8;
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -203,8 +204,6 @@ header .nav-contact {
   background-color: var(--web-hover-color);
   color: var(--white);
 
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -368,6 +367,7 @@ header .nav-contact {
 }
 
 .third-title-portfolio {
+  color: var(--main-color);
   font-size: 18px;
   line-height: 2;
 
@@ -416,12 +416,13 @@ header .nav-contact {
   padding-bottom: 30px;
 }
 
+/* ul */
 .team-list-icons {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
+/* a */
 .team-socials-link {
   display: flex;
   align-items: center;
@@ -432,16 +433,12 @@ header .nav-contact {
   border-radius: 50%;
   color: var(--icon-color);
 }
-
+/* svg */
 .team-socials-icon {
   fill: currentColor;
 
   width: 20px;
   height: 20px;
-}
-
-.team-socials {
-  border-radius: 50%;
 }
 
 .team-socials-link:hover .team-socials-icon,
@@ -457,8 +454,9 @@ header .nav-contact {
   border: 1px solid rgba(238, 238, 238, 1);
 }
 
+/* PORTFOLIO*/
+
 .portfolio {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -469,10 +467,13 @@ header .nav-contact {
   border-radius: 4px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link {
+  display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -489,10 +490,6 @@ header .nav-contact {
 }
 
 .clients-item {
-  display: block;
-  width: 170px;
-  height: 92px;
-
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
@@ -518,12 +515,12 @@ header .nav-contact {
   justify-content: center;
   color: var(--icon-color);
 
-  /* padding: 16px 32px;
-  display: block; */
+  width: 170px;
+  height: 92px;
 }
 
-.clients-item:hover .clients-item-icon,
-.clients-item:focus .clients-item-icon,
+.clients-item-link:hover .clients-item-icon,
+.clients-item-link:focus .clients-item-icon,
 .clients-item-link:hover,
 .clients-item-link:focus {
   fill: var(--web-hover-color);
@@ -583,32 +580,25 @@ header .nav-contact {
   margin-bottom: 20px;
 }
 
-.join-item {
-  background-color: rgba(255, 255, 255, 0.1);
+.join-item-link {
+  background-color: var(--footer-icon-bg);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 44px;
   height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.join-item:hover,
-.join-item:focus {
+.join-item-link:hover,
+.join-item-link:focus {
   background-color: var(--web-hover-color);
 }
 
 .join-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.join-item-link {
-  padding: 12px;
-  display: block;
 }
 
 .join-item-icon {
