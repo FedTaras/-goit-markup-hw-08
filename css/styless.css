@@ -828,6 +828,8 @@ header .nav-contact {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms var(--anime);
+
+  padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -852,7 +854,61 @@ header .nav-contact {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-button:hover .icon-close {
+  fill: var(--web-hover-color);
+}
+
 .icon-close {
   width: 18px;
   height: 18px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  margin-bottom: 12px;
+}
+.modal-form-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-title {
+  color: var(--descr-text);
+  font-size: 12px;
+}
+
+/* .modal-form-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+.icon-person-black {
+  width: 18px;
+  height: 18px;
+}
+
+.modal-button-submit {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--web-hover-color);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  margin: 0 auto;
+}
+
+.modal-button-submit:hover,
+.modal-button-submit:focus {
+  background-color: var(--bg-button);
 }
