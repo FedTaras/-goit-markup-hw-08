@@ -430,10 +430,41 @@
         <form class="modal-form" name="modal_form">
           <div class="modal-form-block">
             <lable class="modal-form-title" for="modal_name">Ім'я </lable>
-            <input type="text" class="input-modal-user-name" id="modal_name" />
-            <svg class="icon-person-black">
-              <use href="./images/icons-1.svg#icon-person-black"></use>
-            </svg>
+            <div class="modal-icon">
+              <input type="text" class="input-modal input-modal-user-name" id="modal_name" />
+              <svg class="icon-form icon-person-black">
+                <use href="./images/icons-1.svg#icon-person-black"></use>
+              </svg>
+            </div>
+            <lable class="modal-form-title" for="modal_phone">Телефон </lable>
+            <div class="modal-icon">
+              <input type="tel" class="input-modal input-modal-user-phone" id="modal_phone" />
+              <svg class="icon-form icon-person-black">
+                <use href="./images/icons-1.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+            <lable class="modal-form-title" for="modal_email">Пошта</lable>
+            <div class="modal-icon">
+              <input type="email" class="input-modal input-modal-user-email" id="modal_email" />
+              <svg class="icon-form icon-person-black">
+                <use href="./images/icons-1.svg#icon-email-black"></use>
+              </svg>
+            </div>
+            <lable class="modal-form-title" for="modal_comment">Коментар</lable>
+            <textarea
+              class="input-modal input-modal-comment"
+              name="modal-textarea"
+              id="modal_comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="agreement-box">
+            <label class="agreement-label">
+              <input type="checkbox" name="v-checkbox" />
+              <span class="agreement"
+                >Погоджуюся з розсилкою та приймаю <a href="#index.html"> Умови договору</a></span
+              >
+            </label>
           </div>
           <button class="modal-button-submit" type="submit">Відправити</button>
         </form>
