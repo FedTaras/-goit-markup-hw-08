@@ -431,21 +431,41 @@
           <div class="modal-form-block">
             <lable class="modal-form-title" for="modal_name">Ім'я </lable>
             <div class="modal-icon">
-              <input type="text" class="input-modal input-modal-user-name" id="modal_name" />
+              <input
+                type="text"
+                class="input-modal input-modal-user-name"
+                id="modal_name"
+                name="name"
+                required
+              />
               <svg class="icon-form icon-person-black">
                 <use href="./images/icons-1.svg#icon-person-black"></use>
               </svg>
             </div>
             <lable class="modal-form-title" for="modal_phone">Телефон </lable>
             <div class="modal-icon">
-              <input type="tel" class="input-modal input-modal-user-phone" id="modal_phone" />
+              <input
+                type="tel"
+                class="input-modal input-modal-user-phone"
+                id="modal_phone"
+                name="phone"
+                required
+                minlength="10"
+                maxlength="12"
+              />
               <svg class="icon-form icon-person-black">
                 <use href="./images/icons-1.svg#icon-phone-black"></use>
               </svg>
             </div>
             <lable class="modal-form-title" for="modal_email">Пошта</lable>
             <div class="modal-icon">
-              <input type="email" class="input-modal input-modal-user-email" id="modal_email" />
+              <input
+                type="email"
+                class="input-modal input-modal-user-email"
+                id="modal_email"
+                name="email"
+                required
+              />
               <svg class="icon-form icon-person-black">
                 <use href="./images/icons-1.svg#icon-email-black"></use>
               </svg>
@@ -456,13 +476,19 @@
               name="modal-textarea"
               id="modal_comment"
               placeholder="Введіть текст"
+              name="comment"
             ></textarea>
           </div>
           <div class="agreement-box">
             <label class="agreement-label">
-              <input type="checkbox" name="v-checkbox" />
+              <input class="agreement-checkbox" type="checkbox" name="v-checkbox" required />
+              <svg class="icon-form icon-check">
+                <use class="check" href="./images/icons-1.svg#icon-check"></use>
+                <use class="not-check" href="./images/icons-1.svg#icon-check-none"></use>
+              </svg>
               <span class="agreement"
-                >Погоджуюся з розсилкою та приймаю <a href="#index.html"> Умови договору</a></span
+                >Погоджуюся з розсилкою та приймаю
+                <a class="conditions" href="#index.html"> Умови договору</a></span
               >
             </label>
           </div>

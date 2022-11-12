@@ -14,7 +14,6 @@
   --footer-icon-bg: rgba(255, 255, 255, 0.1);
   --main-color-02: rgba(33, 33, 33, 0.2);
   --text-nav-color08: #75757580;
-
   --anime: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -417,22 +416,7 @@ header .nav-contact {
 
 .img-work-box {
   position: relative;
-
-  /* display: flex; */
 }
-
-/* .img-work-text {
-  background-color: #2f303acc;
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  right: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .img-work-name {
   text-transform: uppercase;
@@ -444,13 +428,11 @@ header .nav-contact {
   width: 100%;
   height: 70px;
   bottom: 0;
-  /* right: 0; */
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* letter-spacing: 0.03em; */
   color: var(--white);
 }
 
@@ -908,6 +890,24 @@ header .nav-contact {
 
   margin-bottom: 10px;
   padding-left: 35px;
+
+  cursor: pointer;
+
+  transition: border 250ms var(--anime);
+}
+
+.icon-form {
+  transition: fill 250ms var(--anime);
+}
+
+.input-modal:hover,
+.input-modal:focus {
+  border: 1px solid var(--web-hover-color);
+}
+
+.modal-icon:hover .icon-form,
+.modal-icon:focus .icon-form {
+  fill: var(--web-hover-color);
 }
 
 .icon-person-black {
@@ -933,9 +933,55 @@ header .nav-contact {
 }
 
 .agreement-box {
-  /* text-align: center; */
-
   margin-bottom: 30px;
+}
+
+.agreement-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+.agreement-checkbox {
+  appearance: none;
+}
+
+.icon-check {
+  width: 16px;
+  height: 15px;
+}
+
+.icon-check .check {
+  opacity: 0;
+
+  transition: opacity 250ms var(--anime);
+}
+
+.agreement-checkbox:checked + .icon-check .check {
+  opacity: 1;
+}
+
+.icon-check .not-check {
+  opacity: 1;
+
+  transition: opacity 2500ms var(--anime);
+}
+
+.agreement-checkbox:checked + .icon-check .not-check {
+  opacity: 0;
+}
+
+.agreement {
+  line-height: 1.71;
+  color: var(--descr-text);
+}
+
+.conditions {
+  color: var(--web-hover-color);
 }
 
 .modal-button-submit {
