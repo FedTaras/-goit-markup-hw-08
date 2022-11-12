@@ -12,6 +12,8 @@
   --bg-button: #188ce8;
   --icon-color: #afb1b8;
   --footer-icon-bg: rgba(255, 255, 255, 0.1);
+  --main-color-02: rgba(33, 33, 33, 0.2);
+  --text-nav-color08: #75757580;
 
   --anime: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -313,7 +315,6 @@ header .nav-contact {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  font-family: roboto;
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -322,6 +323,8 @@ header .nav-contact {
   min-width: 216px;
   border: none;
   margin: 0 auto;
+
+  transition: background-color 250ms var(--anime);
 }
 
 .section-title {
@@ -741,7 +744,7 @@ header .nav-contact {
   width: 570px;
   height: 87px;
 }
-.signup_form {
+.signup-form {
   display: flex;
   flex-direction: column;
 }
@@ -861,6 +864,8 @@ header .nav-contact {
 .icon-close {
   width: 18px;
   height: 18px;
+
+  transition: fill 250ms var(--anime);
 }
 
 .modal-title {
@@ -874,27 +879,68 @@ header .nav-contact {
 .modal-form-block {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 20px;
 }
 
 .modal-form-title {
   color: var(--descr-text);
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
 }
 
-/* .modal-form-title {
+.modal-icon {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-} */
+  position: relative;
+
+  width: 100%;
+}
+
+.input-modal {
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid var(--main-color-02);
+  border-radius: 4px;
+
+  margin-bottom: 10px;
+  padding-left: 35px;
+}
 
 .icon-person-black {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+
   width: 18px;
   height: 18px;
 }
 
+.input-modal-comment {
+  padding: 12px 16px;
+  height: 120px;
+  width: 100%;
+
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-nav-color08);
+}
+
+.agreement-box {
+  /* text-align: center; */
+
+  margin-bottom: 30px;
+}
+
 .modal-button-submit {
   text-align: center;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background-color: var(--web-hover-color);
   color: var(--white);
@@ -906,9 +952,13 @@ header .nav-contact {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   margin: 0 auto;
+  padding: 0;
+  transition: background-color 250ms var(--anime);
 }
 
 .modal-button-submit:hover,
-.modal-button-submit:focus {
+.modal-button-submit:focus,
+.main-button:hover,
+.main-button:focus {
   background-color: var(--bg-button);
 }
