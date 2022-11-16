@@ -717,10 +717,72 @@ header .nav-contact {
 }
 
 .container-socials {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-e-mail-join {
+  position: relative;
+
+  width: 570px;
+  /* height: 87px; */
+}
+.user-mail {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: bold;
+  line-height: 1.14;
+
+  margin-bottom: 20px;
+}
+
+.input-user-mail {
+  width: 360px;
+  height: 50px;
+  background-color: inherit;
+
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn-user-mail {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--white);
+  width: 200px;
+  height: 50px;
+  background-color: var(--web-hover-color);
+
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.icon-send-white {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}
+/* .footer-e-mail-join {
   position: relative;
 
   width: 570px;
@@ -736,7 +798,7 @@ header .nav-contact {
   font-weight: bold;
   line-height: 1.14;
 
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .input-user-mail {
@@ -766,6 +828,7 @@ header .nav-contact {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  font-weight: 700;
   color: var(--white);
   width: 200px;
   height: 50px;
@@ -783,7 +846,7 @@ header .nav-contact {
   height: 24px;
 
   margin-left: 10px;
-}
+} */
 .backdrop {
   position: fixed;
   top: 0;
@@ -839,7 +902,8 @@ header .nav-contact {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-button:hover .icon-close {
+.modal-button:hover .icon-close,
+.modal-button:focus .icon-close {
   fill: var(--web-hover-color);
 }
 
@@ -879,6 +943,7 @@ header .nav-contact {
   position: relative;
 
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .input-modal {
@@ -888,12 +953,12 @@ header .nav-contact {
   border: 1px solid var(--main-color-02);
   border-radius: 4px;
 
-  margin-bottom: 10px;
   padding-left: 35px;
 
   cursor: pointer;
 
   transition: border 250ms var(--anime);
+  outline: transparent;
 }
 
 .icon-form {
@@ -906,13 +971,14 @@ header .nav-contact {
 }
 
 .modal-icon:hover .icon-form,
-.modal-icon:focus .icon-form {
+.input-modal:focus + .icon-form {
   fill: var(--web-hover-color);
 }
 
 .icon-person-black {
   position: absolute;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
 
   width: 18px;
