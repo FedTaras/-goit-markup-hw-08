@@ -366,46 +366,46 @@
             </ul>
           </address>
         </div>
-        <div class="container-socials">
-          <p class="join-text">приєднуйтесь</p>
-          <ul class="list join-list">
-            <li class="join-item">
-              <a class="link join-item-link" href="./index.html">
-                <svg class="join-item-icon">
+        <div class="footer-socials">
+          <p class="footer-socials__text">приєднуйтесь</p>
+          <ul class="join-list list">
+            <li class="join-list__item">
+              <a class="join-list__link link" href="./index.html">
+                <svg class="join-list__icon">
                   <use href="./images/icons.svg#icon-bottom-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a class="link join-item-link" href="./index.html">
-                <svg class="join-item-icon">
+            <li class="join-list__item">
+              <a class="join-list__link link" href="./index.html">
+                <svg class="join-list__icon">
                   <use href="./images/icons.svg#icon-bottom-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a class="link join-item-link" href="./index.html">
-                <svg class="join-item-icon">
+            <li class="join-list__item">
+              <a class="join-list__link link" href="./index.html">
+                <svg class="join-list__icon">
                   <use href="./images/icons.svg#icon-bottom-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a class="link join-item-link" href="./index.html">
-                <svg class="join-item-icon">
+            <li class="join-list__item">
+              <a class="join-list__link link" href="./index.html">
+                <svg class="join-list__icon">
                   <use href="./images/icons.svg#icon-bottom-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-e-mail-join">
-          <p class="user-mail">Підпишіться на розсилку</p>
+        <div class="signup-email">
+          <p class="signup-email__text">Підпишіться на розсилку</p>
           <form class="signup-form" name="signup_form">
-            <input class="input-user-mail" type="email" name="email" placeholder="E-mail" />
-            <button class="btn-user-mail" type="submit">
+            <input class="signup-form__input" type="email" name="email" placeholder="E-mail" />
+            <button class="signup-form__btn" type="submit">
               Підписатися
-              <svg class="icon-send-white">
+              <svg class="signup-form__icon">
                 <use href="./images/icons-1.svg#icon-send-white"></use>
               </svg>
             </button>
@@ -415,32 +415,26 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button" data-modal-close>
-          <svg class="icon-close">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-btn__icon">
             <use href="./images/icons-1.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form" name="modal_form">
-          <div class="modal-form-block">
-            <lable class="modal-form-title" for="modal_name">Ім'я </lable>
-            <div class="modal-icon">
-              <input
-                type="text"
-                class="input-modal input-modal-user-name"
-                id="modal_name"
-                name="name"
-                required
-              />
+          <div class="modal-form__block">
+            <lable class="modal-form__lable" for="modal_name">Ім'я </lable>
+            <div class="modal-form__box">
+              <input type="text" class="modal-form__input" id="modal_name" name="name" required />
               <svg class="icon-form icon-person-black">
                 <use href="./images/icons-1.svg#icon-person-black"></use>
               </svg>
             </div>
-            <lable class="modal-form-title" for="modal_phone">Телефон </lable>
-            <div class="modal-icon">
+            <lable class="modal-form__lable" for="modal_phone">Телефон </lable>
+            <div class="modal-form__box">
               <input
                 type="tel"
-                class="input-modal input-modal-user-phone"
+                class="modal-form__input"
                 id="modal_phone"
                 name="phone"
                 required
@@ -451,11 +445,11 @@
                 <use href="./images/icons-1.svg#icon-phone-black"></use>
               </svg>
             </div>
-            <lable class="modal-form-title" for="modal_email">Пошта</lable>
-            <div class="modal-icon">
+            <lable class="modal-form__lable" for="modal_email">Пошта</lable>
+            <div class="modal-form__box">
               <input
                 type="email"
-                class="input-modal input-modal-user-email"
+                class="modal-form__input"
                 id="modal_email"
                 name="email"
                 required
@@ -464,9 +458,9 @@
                 <use href="./images/icons-1.svg#icon-email-black"></use>
               </svg>
             </div>
-            <lable class="modal-form-title" for="modal_comment">Коментар</lable>
+            <lable class="modal-form__lable" for="modal_comment">Коментар</lable>
             <textarea
-              class="input-modal input-modal-comment"
+              class="modal-form__input modal-form__input--comment"
               name="modal-textarea"
               id="modal_comment"
               placeholder="Введіть текст"
@@ -474,15 +468,15 @@
             ></textarea>
           </div>
           <div class="agreement-box">
-            <label class="agreement-label">
-              <input class="agreement-checkbox" type="checkbox" name="v-checkbox" required />
+            <label class="agreement-box__label">
+              <input class="agreement-box__checkbox" type="checkbox" name="v-checkbox" required />
               <svg class="icon-form icon-check">
                 <use class="check" href="./images/icons-1.svg#icon-check"></use>
                 <use class="not-check" href="./images/icons-1.svg#icon-check-none"></use>
               </svg>
-              <span class="agreement"
+              <span class="agreement-box_yes"
                 >Погоджуюся з розсилкою та приймаю
-                <a class="conditions" href="#index.html"> Умови договору</a></span
+                <a class="agreement-box_yes--link" href="#index.html"> Умови договору</a></span
               >
             </label>
           </div>
