@@ -1,0 +1,24 @@
+.envelope-icon,
+.smartphone-icon {
+  fill: currentColor;
+  margin-right: 10px;
+
+  transition: color 250ms var(--anime);
+
+  .contacts-list__item:hover &,
+  .contacts-list__item:focus &,
+  .contacts-list__item:hover &,
+  .contacts-list__item:focus & {
+    color: var(--web-hover-color);
+
+    transition: color 250ms var(--anime);
+  }
+}
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+}
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+}

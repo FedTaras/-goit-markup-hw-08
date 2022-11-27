@@ -1,1 +1,21 @@
 @import './utils/vars';
+
+@import './base/base';
+@import './base/hidden';
+
+@import './components/logo';
+@import './components/header';
+@import './components/navigation';
+@import './components/icons';
+@import './components/buttons';
+@import './components/socials';
+@import './components/footer';
+@import './components/adress';
+@import './components/modal';
+
+@import './sections/main';
+@import './sections/advantage';
+@import './sections/work';
+@import './sections/team';
+@import './sections/portfolio';
+@import './sections/clients';

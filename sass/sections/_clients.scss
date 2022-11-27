@@ -1,0 +1,32 @@
+.clients-section__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-section__icon {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+
+.clients-section__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+
+  border: 1px solid currentColor;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 92px;
+
+  transition: color 250ms var(--anime), border-color 250ms var(--anime);
+
+  &:hover,
+  &:focus {
+    color: var(--web-hover-color);
+    border: 1px solid var(--web-hover-color);
+
+    transition: color 250ms var(--anime), border-color 250ms var(--anime);
+  }
+}

@@ -1,0 +1,27 @@
+.main-section {
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/team-bg.jpg);
+  background-color: var(--footer-bg);
+  max-width: 1600px;
+  height: 600px;
+
+  margin: 0 auto;
+  padding-bottom: 200px;
+  padding-top: 200px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-section__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+
+  margin: 0 auto 30px auto;
+  width: 696px;
+}

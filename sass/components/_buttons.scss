@@ -1,0 +1,129 @@
+.main-button {
+  background-color: var(--web-hover-color);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+  min-width: 216px;
+  border: none;
+  margin: 0 auto;
+
+  transition: background-color 250ms var(--anime);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-button);
+  }
+}
+
+.signup-form__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--white);
+  width: 200px;
+  height: 50px;
+  background-color: var(--web-hover-color);
+
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover .modal-close-btn__icon,
+  &:focus .modal-close-btn__icon {
+    fill: var(--web-hover-color);
+  }
+}
+
+.modal-close-btn__icon {
+  width: 18px;
+  height: 18px;
+
+  transition: fill 250ms var(--anime);
+}
+
+.modal-button-submit {
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  background-color: var(--web-hover-color);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  margin: 0 auto;
+  padding: 0;
+  transition: background-color 250ms var(--anime);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-button);
+  }
+}
+
+.portfolio-filter__button {
+  font-family: roboto;
+  background-color: var(--team-bc);
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+
+  transition: color 250ms var(--anime), background-color 250ms var(--anime),
+    box-shadow 250ms var(--anime);
+
+  &:hover,
+  &:focus {
+    background-color: var(--web-hover-color);
+    color: var(--white);
+
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
+    transition: color 250ms var(--anime), background-color 250ms var(--anime),
+      box-shadow 250ms var(--anime);
+  }
+}
