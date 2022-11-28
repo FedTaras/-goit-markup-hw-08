@@ -13,6 +13,7 @@
 
 .navigation-list__link {
   color: var(--main-color);
+  font-weight: 500;
 
   position: relative;
 
@@ -33,7 +34,6 @@
 
     transition: opacity 250ms var(--anime);
   }
-
 }
 
 .navigation-list__link.current::after,
