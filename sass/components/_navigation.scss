@@ -9,10 +9,6 @@
 
     transition: color 250ms var(--anime);
   }
-
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
 }
 
 .navigation-list__link {
@@ -59,8 +55,11 @@
   align-items: center;
 
   transition: color 250ms var(--anime);
+}
 
-  @media screen and (max-width: 480px) {
+.navigation-list,
+.contacts-list {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 }
