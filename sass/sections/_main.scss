@@ -10,7 +10,11 @@
   padding-top: 200px;
 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  @media screen and (min-width: 1200px) {
+    background-size: cover;
+  }
 }
 
 .main-section__title {

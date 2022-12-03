@@ -8,11 +8,9 @@
   align-items: center;
 }
 
-.navigation-list__item,
-.contacts-list__item {
+.navigation-list__item {
   margin-right: 50px;
 
-  &:last-child,
   &:last-child {
     margin-right: 0;
   }
@@ -20,6 +18,14 @@
 
 .contacts-list {
   margin-left: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
 }
 
 .address__link,
