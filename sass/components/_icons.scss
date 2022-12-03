@@ -22,3 +22,40 @@
   width: 10px;
   height: 16px;
 }
+
+// .icon-mclose {
+//   width: 19px;
+//   height: 19px;
+// }
+
+.icon-mclose {
+  width: 19px;
+  height: 19px;
+
+  fill: var(--main-color);
+
+  transition: fill 250ms var(--anime);
+
+  &:hover,
+  &:focus {
+    fill: var(--web-hover-color);
+
+    transition: fill 250ms var(--anime);
+  }
+}
+
+.menu-toggle__icon {
+  width: 24px;
+  height: 16px;
+
+  fill: currentColor;
+
+  transition: color 250ms var(--anime);
+
+  .menu-toggle:hover &,
+  .menu-toggle:focus & {
+    color: var(--web-hover-color);
+
+    transition: color 250ms var(--anime);
+  }
+}
