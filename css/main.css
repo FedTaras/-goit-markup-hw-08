@@ -1105,10 +1105,18 @@ input {
 .team-section__title,
 .clients-section__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .work-section__title,
+.team-section__title,
+.clients-section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .work-section__box {
@@ -1281,8 +1289,57 @@ input {
   padding-bottom: 94px;
 }
 
-.clients-section__item:not(:last-child) {
-  margin-right: 30px;
+.clients-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .clients-section__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients-section__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .clients-section__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 767.98px) and (max-width: 1199px) {
+  .clients-section__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients-section__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .clients-section__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__item {
+    margin-right: 30px;
+  }
+  .clients-section__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .clients-section__icon {
@@ -1304,7 +1361,7 @@ input {
   color: var(--icon-color);
   border: 1px solid currentColor;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   -webkit-transition: color 250ms var(--anime), border-color 250ms var(--anime);
   transition: color 250ms var(--anime), border-color 250ms var(--anime);
@@ -1314,4 +1371,14 @@ input {
   border: 1px solid var(--web-hover-color);
   -webkit-transition: color 250ms var(--anime), border-color 250ms var(--anime);
   transition: color 250ms var(--anime), border-color 250ms var(--anime);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-section__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__link {
+    width: 170px;
+  }
 }/*# sourceMappingURL=main.css.map */
