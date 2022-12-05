@@ -966,8 +966,8 @@ input {
 }
 
 .main-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team-bg.jpg);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/team-bg.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/team-bg.jpg);
   background-color: var(--footer-bg);
   max-width: 1600px;
   height: 600px;
@@ -1101,9 +1101,16 @@ input {
   }
 }
 
-.work-section__title,
-.team-section__title,
-.clients-section__title {
+.work-section {
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
+}
+
+.work-section__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -1111,9 +1118,7 @@ input {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .work-section__title,
-.team-section__title,
-.clients-section__title {
+  .work-section__title {
     font-size: 36px;
     margin-bottom: 50px;
   }
@@ -1142,10 +1147,6 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--white);
-}
-
-.work-section {
-  padding-top: 0;
 }
 
 .work-section__item:not(:last-child) {
@@ -1184,6 +1185,22 @@ input {
 .team-section__box {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-section__title,
+.clients-section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-section__title,
+.clients-section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__title-name {
