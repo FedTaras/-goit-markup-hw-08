@@ -1,10 +1,9 @@
-.header-logo,
-.footer-logo {
+.header-logo {
   font-family: 'Raleway';
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.17;
 }
 
 .footer-logo {
@@ -19,11 +18,23 @@
   padding-bottom: 16px;
   margin-right: 88px;
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     font-size: 24px;
     font-weight: 400;
 
     margin-right: 93px;
+  }
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
   }
 }
 
