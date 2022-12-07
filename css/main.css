@@ -127,6 +127,12 @@ input {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 .header-logo {
@@ -532,11 +538,21 @@ input {
   padding-bottom: 60px;
 }
 
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 @media screen and (min-width: 1200px) {
   .footer_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -551,6 +567,12 @@ input {
   letter-spacing: 0.03em;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials__text {
+    text-align: left;
+  }
 }
 
 .join-list__link {
@@ -584,12 +606,26 @@ input {
 }
 
 .footer-socials {
+  margin-bottom: 60px;
+  width: 206px;
+  margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 .signup-email {
   position: relative;
-  width: 570px;
+}
+@media screen and (min-width: 1200px) {
+  .signup-email {
+    text-align: left;
+    width: 570px;
+  }
 }
 
 .signup-email__text {
@@ -598,10 +634,16 @@ input {
   font-weight: bold;
   line-height: 1.14;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .signup-email__text {
+    text-align: left;
+  }
 }
 
 .signup-form__input {
-  width: 360px;
+  width: 450px;
   height: 50px;
   background-color: inherit;
   border-radius: 4px;
@@ -613,6 +655,11 @@ input {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1200px) {
+  .signup-form__input {
+    width: 360px;
+  }
+}
 
 .signup-form__icon {
   width: 24px;
@@ -623,13 +670,17 @@ input {
 .address__list {
   list-style: none;
   line-height: 1.71;
-  padding-left: 0;
-  padding-right: 25px;
-  margin: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .address__list {
+    padding-left: 0;
+    padding-right: 25px;
+    margin: 0;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -638,12 +689,8 @@ input {
 
 .address__link {
   color: var(--fotter-cont);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  text-align: center;
   -webkit-transition: color 250ms var(--anime);
   transition: color 250ms var(--anime);
 }
@@ -656,9 +703,25 @@ input {
   line-height: 1.71;
   color: var(--white);
 }
+@media screen and (min-width: 1200px) {
+  .address__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .address-container {
-  margin-right: 70px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 70px;
+  }
 }
 
 .backdrop {

@@ -2,11 +2,13 @@
   list-style: none;
   line-height: 1.71;
 
-  padding-left: 0;
-  padding-right: 25px;
-  margin: 0;
-
   flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 25px;
+    margin: 0;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -15,8 +17,8 @@
 .address__link {
   color: var(--fotter-cont);
 
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
 
   transition: color 250ms var(--anime);
 
@@ -31,8 +33,18 @@
     line-height: 1.71;
     color: var(--white);
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .address-container {
-  margin-right: 70px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
