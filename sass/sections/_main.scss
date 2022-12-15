@@ -1,6 +1,7 @@
 .main-section {
   background-color: var(--footer-bg);
-  max-width: 480px;
+  // max-width: 480px;
+  max-width: 1600px;
   height: auto;
 
   margin: 0 auto;
@@ -21,7 +22,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
 
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/tablet/studio/team-bg.jpg);
@@ -40,7 +41,7 @@
     padding-bottom: 200px;
     padding-top: 200px;
 
-    max-width: 1600px;
+    // max-width: 1600px;
     height: 600px;
 
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -65,7 +66,10 @@
   text-align: center;
 
   margin: 0 auto 30px auto;
-  width: 360px;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;

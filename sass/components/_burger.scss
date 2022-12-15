@@ -116,3 +116,13 @@
 .mobile-socials__link {
   color: var(--web-hover-color);
 }
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.current {
+  color: var(--web-hover-color);
+}

@@ -668,7 +668,7 @@ input {
 }
 
 .signup-form__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: inherit;
   border-radius: 4px;
@@ -680,6 +680,11 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 480px) {
+  .signup-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .signup-form__input {
@@ -769,10 +774,6 @@ input {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
-  background-color: var(--white);
-  border-radius: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -783,10 +784,21 @@ input {
   transition: transform 250ms var(--anime);
   transition: transform 250ms var(--anime), -webkit-transform 250ms var(--anime);
   padding: 40px;
+  background-color: var(--white);
+  border-radius: 4px;
 }
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-75%, -25%);
           transform: translate(-75%, -25%);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1069,9 +1081,22 @@ input {
   color: var(--web-hover-color);
 }
 
+.mobile-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.current {
+  color: var(--web-hover-color);
+}
+
 .main-section {
   background-color: var(--footer-bg);
-  max-width: 480px;
+  max-width: 1600px;
   height: auto;
   margin: 0 auto;
   padding-bottom: 118px;
@@ -1089,7 +1114,6 @@ input {
 }
 @media screen and (min-width: 768px) {
   .main-section {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/studio/team-bg.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/team-bg.jpg);
   }
@@ -1105,7 +1129,6 @@ input {
     background-size: cover;
     padding-bottom: 200px;
     padding-top: 200px;
-    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/studio/team-bg.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/studio/team-bg.jpg);
@@ -1127,7 +1150,11 @@ input {
   color: var(--white);
   text-align: center;
   margin: 0 auto 30px auto;
-  width: 360px;
+}
+@media screen and (max-width: 1199px) {
+  .main-section__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-section__title {
@@ -1172,7 +1199,7 @@ input {
 }
 
 .advantage-logo {
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   display: -webkit-box;
@@ -1209,7 +1236,6 @@ input {
 }
 
 .advantage-list__item {
-  width: 450px;
   margin-bottom: 30px;
 }
 .advantage-list__item:last-child {
@@ -1408,6 +1434,7 @@ input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 15px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 767px) {
@@ -1550,6 +1577,9 @@ input {
   .clients-section__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .clients-section__item:nth-child(2n) {
     margin-right: 0;
